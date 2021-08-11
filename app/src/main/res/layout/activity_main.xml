@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="185dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="624dp"
+        android:gravity="center"
+        android:text="@string/titulo"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/valor1"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Primeiro valor"
+        android:inputType="textPersonName"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <EditText
+        android:id="@+id/valor2"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Segundo valor"
+        android:inputType="textPersonName"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor1"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="248dp"
+        android:layout_height="193dp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="286dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/soma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/soma" />
+
+        <RadioButton
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sub" />
+
+        <RadioButton
+            android:id="@+id/mult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mult" />
+
+        <RadioButton
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/div" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="188dp"
+        android:layout_height="50dp"
+        android:onClick="calcular"
+        android:text="@string/calc"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+/
+</androidx.constraintlayout.widget.ConstraintLayout>
